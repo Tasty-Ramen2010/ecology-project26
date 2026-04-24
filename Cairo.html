@@ -562,7 +562,7 @@
     <div class="hero-meta">
       <span class="dot"></span>
       <span id="heroEra">Present Day</span>
-      <em id="heroYear">— 2026 CE</em>
+      <em id="heroYear">— 2026 AD</em>
     </div>
 
     <div class="title-wrap">
@@ -591,7 +591,7 @@
 
     <div class="timeline">
       <div class="row">
-        <em id="tlLeft">2026 CE</em>
+        <em id="tlLeft">2026 AD</em>
         <em id="tlRight">+250,000,000 yrs</em>
       </div>
       <div class="track"><div class="fill" id="tlFill"></div></div>
@@ -637,7 +637,7 @@
   <div class="container" style="max-width:none">
     <div class="compare-grid">
       <div class="compare-col present">
-        <div class="tag">Now · 2026 CE</div>
+        <div class="tag">Now · 2026 AD</div>
         <h3>A <em>desert</em><br/>under westerlies.</h3>
         <div style="margin:8px 0 18px">
           <span class="climate-chip"><span class="swatch"></span>Hot desert</span>
@@ -1001,7 +1001,7 @@
 
       <!-- PRESENT WEB -->
       <div class="web present">
-        <div class="era"><span class="sw"></span>Now · 2026 CE</div>
+        <div class="era"><span class="sw"></span>Now · 2026 AD</div>
         <h3>Arid &amp; <em>riverine.</em></h3>
         <div class="biome">Nile floodplain · desert scrub · dry plateau</div>
 
@@ -1290,7 +1290,7 @@
     // era text
     heroEra.textContent = t < 0.5 ? 'Present Day' : 'Projected — +250 Myr';
     const year = Math.round(lerp(2026, 250002026, t));
-    heroYear.textContent = t < 0.02 ? '— 2026 CE' : `— ${year.toLocaleString()} CE`;
+    heroYear.textContent = t < 0.02 ? '— 2026 AD' : `— ${year.toLocaleString()} AD`;
 
     // sub line
     const lat = lerp(30.0444, 35.1273, t).toFixed(4);
